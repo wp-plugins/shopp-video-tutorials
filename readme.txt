@@ -7,7 +7,7 @@ Tested up to: 3.5.1
 Stable tag: 1.0
 License: GPLv2
 
-Learn Shopp for your WordPress admin dashboard.
+Learn how to use the Shopp e-commerce plugin from your WordPress admin.
 
 == Description ==
 
