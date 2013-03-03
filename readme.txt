@@ -1,21 +1,21 @@
 === Shopp + Video Tutorials ===
 Contributors: lorenzocaum, enzo12llc
 Donate link: http://optimizemyshopp.com/go/donate-shopp-video-tutorials/
-Tags: ecommerce, online store, shopping cart, webshop, wp e-commerce, shopp plugin, shopp, video tutorials, training, education
+Tags: e-commerce, online store, shopping cart, webshop, wp e-commerce, shopp plugin, shopp, video tutorials, training, education
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 License: GPLv2
 
 Learn how to use the Shopp e-commerce plugin from your WordPress admin.
 
 == Description ==
 
-This plugin provides video tutorials and online lessons for the [Shopp ecommerce plugin](http://shopplugin.net).
+This plugin provides video tutorials and online lessons for the [Shopp e-commerce plugin](http://shopplugin.net).
 
 = Recommendations =
 
-* Need help with your Shopp ecommerce store? Hire a [Shopp developer](http://optimizemyshopp.com/store/wordpress-consulting/) today.  
+* Need help with your Shopp e-commerce store? Hire a [Shopp developer](http://optimizemyshopp.com/store/wordpress-consulting/) today.  
 * View additional [WordPress plugins for Shopp](http://optimizemyshopp.com/resources/#shopp-extensions) by Lorenzo Orlando Caum, Enzo12 LLC
 * Follow Lorenzo on [Facebook](http://facebook.com/lorenzocaum), [Twitter](http://twitter.com/lorenzocaum), and [LinkedIn](http://www.linkedin.com/in/lorenzocaum)
 * Check out our latest project: [Web-based training for Shopp](http://shopp101.com/library/)
@@ -57,10 +57,17 @@ What do you think about video tutorials for Shopp? [Web-based lessons and tutori
 
 == Changelog ==
 
+= 1.0.1 =
+* Relocated videos on Vimeo
+* Added additional tutorials for Shopp
+
 = 1.0 =
 * First version of Shopp + Video Tutorials
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Upgrade to access more tutorials with Shopp + Video Tutorials
 
 = 1.0 =
 First version!
