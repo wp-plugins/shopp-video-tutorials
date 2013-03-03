@@ -1,15 +1,15 @@
 <?php
 /*
 Plugin Name: Shopp + Video Tutorials
-Description: Learn Shopp through your WordPress dashboard.
-Version: 1.0
+Description: Learn how to use the Shopp e-commerce plugin from your WordPress admin.
+Version: 1.0.1
 Plugin URI: http://shopp101.com
 Author: Lorenzo Orlando Caum, Enzo12 LLC
 Author URI: http://www.enzo12.com
 License: GPLv2
 */
 /* 
-(CC BY 3.0) 2012  Lorenzo Orlando Caum  (email : hello@enzo12.com)
+(CC BY 3.0) 2013  Lorenzo Orlando Caum  (email : hello@enzo12.com)
 
 	This plugin is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@ License: GPLv2
 */
     
 
-function shopp_vt_modern_version_check() {
+function shopp_video_tutorials_modern_version_check() {
     if ( version_compare( SHOPP_VERSION , '1.2' , '<')) {
             
     require_once( ABSPATH . 'wp-admin/includes/plugin.php' );
@@ -39,7 +39,7 @@ function shopp_vt_modern_version_check() {
         new Shopp_Video_Tutorials();
     }
 }
-add_action( 'plugins_loaded', 'shopp_vt_modern_version_check' );
+add_action( 'plugins_loaded', 'shopp_video_tutorials_modern_version_check' );
 
 class Shopp_Video_Tutorials {
 	public static $name;
@@ -51,7 +51,7 @@ class Shopp_Video_Tutorials {
 	}
 	
 	public function init() {
-		wp_enqueue_style( 'shopp-video-tutorials-stylesheet', plugins_url( "css/shopp-video-tutorials.css", __FILE__ ), array(), '20130301' );
+		wp_enqueue_style( 'shopp-video-tutorials-stylesheet', plugins_url( "css/shopp-video-tutorials.css", __FILE__ ), array(), '20130303' );
 		
 		add_action('admin_menu', array($this, 'admin_menu'));
 	}
@@ -87,7 +87,7 @@ class Shopp_Video_Tutorials {
 			<div id="shopp-video-tutorials-introduction" class="postbox">
 				<h3 class="hndle"><span>Introduction</span></h3>
 				<div class="inside">
-					<p>This plugin provides online lessons and tutorials for the Shopp ecommerce plugin.</p>
+					<p>This plugin provides online lessons and tutorials for the <a href="http://shopp101.com/go/shopp/" title="Visit shopplugin.net">Shopp</a> e-commerce plugin.</p>
 					<p>Now you can learn how to use Shopp from your WordPress admin. For the best experience, please ensure that your web browser is up-to-date.</p>
                     <strong>Acknowledgements</strong>
                     <br />
@@ -104,27 +104,27 @@ class Shopp_Video_Tutorials {
 				<p><?php if ( '' === get_option( 'shopp_video_tutorials_name', '' ) ) {
                     echo "";
                     } else {
-                    echo "Hello ". get_option("shopp_video_tutorials_name", $this->name). "!"; } ?></p>
+                    echo "Hello ". get_option("shopp_video_tutorials_name", $this->name). "! Click on a lesson below to get started."; } ?></p>
                 <p><script language="javascript">
                     function changeToVideoSE1()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>Install the Shopp eCommerce Plugin</strong><br /><iframe src="http://player.vimeo.com/video/52353902?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        document.getElementById("videolibrary").innerHTML = '<strong>Install the Shopp eCommerce Plugin</strong><br /><iframe src="http://player.vimeo.com/video/60959688?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br /><br /><strong>Installing Shopp via FTP / SFTP</strong><br /><iframe src="http://player.vimeo.com/video/60959689?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     function changeToVideoSE2()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>An Overview of the Shopp Interface within WP-admin</strong><br /><iframe src="http://player.vimeo.com/video/52354187?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        document.getElementById("videolibrary").innerHTML = '<strong>An Overview of the Shopp Interface within WP-admin</strong><br /><iframe src="http://player.vimeo.com/video/60959690?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     function changeToVideoSE3()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Setup</strong><br /><iframe src="http://player.vimeo.com/video/52354187?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Setup</strong><br /><iframe src="http://player.vimeo.com/video/60959692?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     function changeToVideoSE4()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Payment Settings</strong><br /><iframe src="http://player.vimeo.com/video/52354286?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Payment Settings</strong><br /><iframe src="http://player.vimeo.com/video/60959693?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br /><br /><strong>Install Shopp Gateway Addons via FTP / SFTP</strong><br /><iframe src="http://player.vimeo.com/video/60960005?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     function changeToVideoSE5()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Shipping Settings and Shipping Rates</strong><br /><iframe src="http://player.vimeo.com/video/52354391?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        document.getElementById("videolibrary").innerHTML = '<strong>Shopp Shipping Settings and Shipping Rates</strong><br /><iframe src="http://player.vimeo.com/video/60960006?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe><br /><br /><strong>Install Shopp Gateway Addons via FTP / SFTP</strong><br /><iframe src="http://player.vimeo.com/video/60960007?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     function changeToVideoOLT1()
                         {
