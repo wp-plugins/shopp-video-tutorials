@@ -2,7 +2,7 @@
 /*
 Plugin Name: Shopp + Video Tutorials
 Description: Learn how to use the Shopp e-commerce plugin from your WordPress admin.
-Version: 1.0.1
+Version: 1.0.2
 Plugin URI: http://shopp101.com
 Author: Lorenzo Orlando Caum, Enzo12 LLC
 Author URI: http://www.enzo12.com
@@ -128,7 +128,11 @@ class Shopp_Video_Tutorials {
                         }
                     function changeToVideoOLT1()
                         {
-                        document.getElementById("videolibrary").innerHTML = '<strong>How to Manually Reinstall the Shopp Plugin</strong><br /><img src="<?php echo plugins_url( 'shopp-video-tutorials/images/new-lesson-arriving-soon.gif' , dirname(__FILE__) ); ?>" width="600" height="300" />';
+                        document.getElementById("videolibrary").innerHTML = '<strong>How to Setup Shopp Content Templates</strong><br /><iframe src="http://player.vimeo.com/video/62588713?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+                        }
+                    function changeToVideoOLT2()
+                        {
+                        document.getElementById("videolibrary").innerHTML = '<strong>How to Reinstall the Shopp Core</strong><br /><iframe src="http://player.vimeo.com/video/62661725?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=ffffff" width="600" height="337" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
                         }
                     </script></p>
                 <p>
@@ -142,7 +146,8 @@ class Shopp_Video_Tutorials {
                     </ul>
                     <strong>Other Lessons and Tutorials</strong>
                     <ul>
-                        <li><a href="javascript:changeToVideoOLT1();">How to Manually Reinstall the Shopp Plugin</a></li>
+                        <li><a href="javascript:changeToVideoOLT1();">How to Setup Shopp Content Templates</a></li>
+                        <li><a href="javascript:changeToVideoOLT2();">How to Reinstall the Shopp Core</a></li>
                     </ul>
                  </p>
                 </div>
