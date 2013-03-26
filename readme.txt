@@ -4,7 +4,7 @@ Donate link: http://optimizemyshopp.com/go/donate-shopp-video-tutorials/
 Tags: e-commerce, online store, shopping cart, webshop, wp e-commerce, shopp plugin, shopp, video tutorials, training, education
 Requires at least: 3.0
 Tested up to: 3.5.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2
 
 Learn how to use the Shopp e-commerce plugin from your WordPress admin.
@@ -57,6 +57,10 @@ What do you think about video tutorials for Shopp? [Web-based lessons and tutori
 
 == Changelog ==
 
+= 1.0.2 =
+* New video: How to reinstall the Shopp core
+* New video: How to setup Shopp content templates
+
 = 1.0.1 =
 * Relocated videos on Vimeo
 * Added additional tutorials for Shopp
@@ -65,6 +69,9 @@ What do you think about video tutorials for Shopp? [Web-based lessons and tutori
 * First version of Shopp + Video Tutorials
 
 == Upgrade Notice ==
+
+= 1.0.2 =
+Upgrade to view new tutorials
 
 = 1.0.1 =
 Upgrade to access more tutorials with Shopp + Video Tutorials
